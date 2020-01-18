@@ -64,6 +64,35 @@ namespace test
             {
                 Console.Write("{0} X {1} = {2} \n", n, j, n * j);
             }
+
+            int a, b;
+            Console.Write("\n");
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+            while (a < b)
+            {
+                Console.WriteLine(a);
+                a++;
+                break;
+            }
+            Console.Write("The second number should be bigger");
+
+            Console.WriteLine("\n");
+
+            int starnumber = Convert.ToInt32(Console.ReadLine());
+            int l, k;
+            for (l = 0; l < starnumber; l++)
+            {
+                
+                for (k = 0; k <= l; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("");
+            }
+            Console.ReadLine();
+
         }
-    }
+
+        }
 }
